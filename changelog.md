@@ -13,6 +13,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Automated testing framework for scripts
 - Integration with university SSO systems
 
+## [1.2.1] - 2025-08-27
+
+### Added
+- 📖 **Thai language support** - Complete Thai translation (readme-th.md)
+- 🛠️ **Manual installation guide** - Step-by-step instructions for individual tool installation
+- 📦 **Multiple package manager support** - Homebrew, Chocolatey, Winget options
+- 🔗 **Language selector** - Easy access to Thai documentation from main README
+
+### Fixed
+- 🐛 **PowerShell syntax errors** in windows_setup.ps1 (lines 88, 86, 129, 134, 135)
+- ✅ **Email regex pattern** - Fixed unterminated string causing script failures
+- 🔄 **Do-while loop closure** - Proper email validation loop structure
+- 🧹 **Duplicate code removal** - Cleaned up misplaced git configuration blocks
+
+### Changed
+- 📝 **Course name updated** - Now "VideCode โคตร Vibe Workshop"
+- 🌐 **Improved accessibility** - Bilingual documentation support
+
 ## [1.2.0] - 2025-01-XX
 
 ### Added
@@ -85,6 +103,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Release Date | Key Features |
 |---------|-------------|--------------|
+| 1.2.1   | 2025-08-27  | Thai translation, Manual installation guide, PowerShell syntax fixes |
 | 1.2.0   | 2025-01-XX  | Interactive Git config, Install all AI tools, Service signup links |
 | 1.1.0   | 2025-01-XX  | Windows Terminal, Essential extensions, Simplified package list |
 | 1.0.0   | 2025-01-XX  | Initial release, Core tools, AI assistant selection |
