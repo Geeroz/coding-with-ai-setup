@@ -85,7 +85,16 @@ do {
 
 do {
     $gitEmail = Read-Host "Enter your email address"
-    $emailPattern = '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}
+    $emailPattern = '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$'
+    if (-not ($gitEmail -match $emailPattern)) {
+        Write-Host "Please enter a valid email address." -ForegroundColor Red
+    }
+} while (-not ($gitEmail -match $emailPattern))
+
+# Set Git configuration
+git config --global user.name "$gitName"
+git config --global user.email "$gitEmail"
+Write-Host "✅ Git configured with name: $gitName and email: $gitEmail" -ForegroundColor Green
 
 # AI CLI Installation Options
 Write-Host ""
