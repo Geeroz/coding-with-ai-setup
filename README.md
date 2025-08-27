@@ -1,6 +1,8 @@
 # 🚀 Coding with AI - Development Environment Setup
 
-**Official installation scripts for [Your Course Name] students**
+**Official installation scripts for VideCode โคตร Vibe Workshop**
+
+📖 **[ไทย (Thai) / อ่านคำแนะนำเป็นภาษาไทย](./readme-th.md)**
 
 [![GitHub release](https://img.shields.io/github/release/yourusername/coding-with-ai-setup.svg)](https://github.com/yourusername/coding-with-ai-setup/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -53,6 +55,148 @@
    ```powershell
    Set-ExecutionPolicy Bypass -Scope Process -Force; .\setup_windows.ps1
    ```
+
+## 🛠️ Manual Installation (Alternative)
+
+If you prefer to install tools manually or need specific versions, here's how to install each component individually:
+
+### Core Development Tools
+
+#### Node.js & npm
+**macOS:**
+```bash
+# Using Homebrew
+brew install node
+
+# Or download from official site
+# Visit: https://nodejs.org/
+```
+
+**Windows:**
+```powershell
+# Using Chocolatey
+choco install nodejs
+
+# Using Winget
+winget install OpenJS.NodeJS
+
+# Or download from official site
+# Visit: https://nodejs.org/
+```
+
+#### Git
+**macOS:**
+```bash
+# Using Homebrew
+brew install git
+
+# Or download from official site
+# Visit: https://git-scm.com/
+```
+
+**Windows:**
+```powershell
+# Using Chocolatey
+choco install git
+
+# Using Winget
+winget install Git.Git
+
+# Or download from official site
+# Visit: https://git-scm.com/
+```
+
+#### Visual Studio Code
+**macOS:**
+```bash
+# Using Homebrew
+brew install --cask visual-studio-code
+
+# Or download from official site
+# Visit: https://code.visualstudio.com/
+```
+
+**Windows:**
+```powershell
+# Using Chocolatey
+choco install vscode
+
+# Using Winget
+winget install Microsoft.VisualStudioCode
+
+# Or download from official site
+# Visit: https://code.visualstudio.com/
+```
+
+### AI Coding Assistants
+
+#### Gemini CLI
+**Both platforms:**
+```bash
+# Install via npm (after Node.js is installed)
+npm install -g @google-ai/generativelanguage-cli
+
+# Authenticate
+gemini auth login
+```
+
+#### Claude Code
+**macOS:**
+```bash
+# Using Homebrew
+brew install anthropic/claude/claude
+
+# Or using curl
+curl -fsSL https://claude.ai/install.sh | sh
+```
+
+**Windows:**
+```powershell
+# Using PowerShell
+iwr https://claude.ai/install.ps1 | iex
+
+# Or download from GitHub releases
+# Visit: https://github.com/anthropics/claude-code/releases
+```
+
+#### Qwen-Code
+**Both platforms:**
+```bash
+# Install via pip
+pip install qwen-code
+
+# Or via npm
+npm install -g @alibaba/qwen-code
+
+# Authenticate
+qwen-code auth
+```
+
+### Development Utilities
+
+#### Windows Terminal (Windows only)
+```powershell
+# Using Microsoft Store (Recommended)
+# Search for "Windows Terminal" in Microsoft Store
+
+# Using Winget
+winget install Microsoft.WindowsTerminal
+
+# Using Chocolatey
+choco install microsoft-windows-terminal
+```
+
+### Essential VS Code Extensions
+After installing VS Code, install these essential extensions:
+
+```bash
+# Install extensions via command line
+code --install-extension ms-vscode.vscode-json
+code --install-extension esbenp.prettier-vscode
+code --install-extension ms-vscode.vscode-typescript-next
+code --install-extension github.copilot
+code --install-extension anthropic.claude-dev
+```
 
 ## ⚠️ Prerequisites
 
